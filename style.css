@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+body{
+    font-family: 'JetBrains Mono', monospace;
+    word-spacing: -5px;
+    letter-spacing: -1px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 200px;
+}
+.text-info{
+    width: 400px;
+    margin-top: 10px;
+}
+.image-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.image-item img{
+    width: 300px;
+}
+
+.image{
+    display: flex;
+}
+.item-02, .item-05{
+    margin-top: 100px;
+}
+.title{
+    writing-mode: vertical-rl;
+}
+@media screen and (max-width: 576px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .logo-1{
+        text-align: center;
+        font-size: 24px;
+    }
+    .container{
+        flex-direction: column;
+        margin: 10px;
+    }
+    .text-info{
+        width: 90%;
+        margin: 20px auto;
+        text-align: justify; 
+        padding: 10px; 
+    }
+    .image-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image{
+        padding: 10px;
+    }
+    .image-item img{
+        width: 120px;
+    }
+    .item-05{
+        margin-top: 0;
+    }
+    .item-02, .item-04, .item-06{
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
